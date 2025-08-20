@@ -1,0 +1,5 @@
+method,W_mg,rho_g_cm3,A_cm2,t_h,B_mV,Rp_ohm_cm2,EW_g_per_equiv,depth_mm,chloride_ppm,pH,temp_C
+weight-loss,25.4,7.85,12.5,168,,,,,,,
+lpr,,,,,26,1200,27.92,,,,
+pitting,,,,,,,,0.35,, ,720
+suggest,,,,,,,,,5000,5.5,60
