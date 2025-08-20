@@ -3,9 +3,9 @@
 A compact, production-ready Python project to compute corrosion rates using common industry methods:
 
 1. **Weight-loss method (ASTM G31 style units)**
-   - `CR_mm_per_y = (87.6 * W) / (ρ * A * t)`
+   - `CR_m_per_y = (543 * W) / (ρ * A * t)`
      - W in **mg**, ρ in **g/cm³**, A in **cm²**, t in **hours**.
-   - Also returns **mpy** (mils per year).
+   - Also returns **mmpy** (mm per year).
 
 2. **Linear Polarization Resistance (LPR)**
    - `i_corr = B / R_p`
@@ -38,7 +38,5 @@ python main.py --method suggest --chloride_ppm 5000 --pH 5.5 --temp_C 60
 - `corrosion.py` — Core formulas and utilities.
 - `main.py` — CLI for quick use.
 - `sample_inputs.csv` — Example input rows for batch calculations.
-- `tests.py` — Minimal sanity tests.
+- `demo.ipynb` — Demo of the formulaes used and plots in the software.
 - `README.md` — This file.
-
-> **Disclaimer:** Simplified equations for educational use. For critical engineering, consult relevant standards (e.g., ASTM G31, API 571/580/579, NACE/AMPP), validated plant data, and domain experts.
