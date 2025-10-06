@@ -55,7 +55,7 @@ def pitting_rate_mm_per_y(depth_mm: float, t_h: float) -> float:
         raise ValueError("t_h must be positive.")
     return depth_mm * (8760.0 / t_h)
 
-# ---------- Toy material suggestion (rule-based) ----------
+# ---------- Material suggestion (rule-based) ----------
 def suggest_material(chloride_ppm: float, pH: float, temp_C: float) -> Dict[str, str]:
     """
     Very simplified rules to illustrate decision logic.
